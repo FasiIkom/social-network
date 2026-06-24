@@ -1,7 +1,7 @@
 :root {
   --maroon: #a23b48;
   --maroon-soft: #ab4954;
-  --maroon-line: rgba(255, 255, 255, 0.18);
+  --maroon-line: rgba(255, 255, 255, 1);
   --maroon-dark: #8c2f3b;
   --cream: #f1e3ce;
   --cream-2: #ede0c9;
@@ -224,6 +224,13 @@ a {
 }
 .section-head a:hover {
   color: #fff;
+}
+/* garis putih pemisah antara header & konten utk Activity dan Channels
+   (hanya desktop/tablet; di mobile dihilangkan — lihat media query) */
+.s-activity .section-head,
+.s-channels .section-head {
+  border-bottom: 1px solid var(--maroon-line);
+  padding-bottom: 14px;
 }
 
 /* ---------------- Big grid (Videos/People/Documents) ---------------- */
@@ -609,6 +616,13 @@ a {
 
   .section-head h2 {
     font-size: 19px;
+  }
+
+  /* di mobile garis pemisah header Activity/Channels dihilangkan */
+  .s-activity .section-head,
+  .s-channels .section-head {
+    border-bottom: 0;
+    padding-bottom: 0;
   }
 
   /* grid jadi scroll horizontal sesuai desain mobile */
