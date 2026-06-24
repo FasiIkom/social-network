@@ -1,9 +1,9 @@
 # SocialNetwork — Slicing Test (Frontend)
 
 Slicing **responsive** dari desain "SocialNetwork" (desktop + mobile) untuk
-Technical Test Frontend Developer — Insignia.
+Technical Test Frontend Developer Insignia.
 
-## Teknologi
+## Tech Stack
 
 - **Next.js 14** (App Router) + React 18
 - CSS murni (custom, tanpa UI library) untuk slicing presisi
@@ -19,12 +19,6 @@ Technical Test Frontend Developer — Insignia.
 | Activity  | `/comments`        | nama + isi komentar     |
 | Channels  | statis (desain)    | daftar channel          |
 
-## Fitur responsive
-
-- **Desktop:** header + nav, konten 2 kolom (main + sidebar), grid besar.
-- **Mobile:** hamburger menu, kartu scroll horizontal, search pindah ke bawah,
-  overlay **Main Menu** dan **Profile** (sesuai desain mobile X-2 & X-3).
-
 ## Menjalankan
 
 ```bash
@@ -38,7 +32,3 @@ Buka http://localhost:3001
 
 Base URL API bisa diubah lewat env `NEXT_PUBLIC_API_BASE` (default
 `https://dummyjson.com`).
-
-## Deploy
-
-Siap deploy ke **Vercel** (framework otomatis terdeteksi sebagai Next.js).
